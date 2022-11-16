@@ -1,0 +1,140 @@
+# RentaCop Configuration for RuboCop
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 2.6
+
+
+# === Layout ===
+
+# Prefer outdented `private` and `protected`
+Layout/AccessModifierIndentation:
+  EnforcedStyle: outdent
+
+# Align `when` with `end` in `case`
+Layout/CaseIndentation:
+  EnforcedStyle: end
+
+# Indent `end` to the line that started it
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: start_of_line
+
+# Align hash keys and values as a table
+Layout/HashAlignment:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
+
+# Chained methods in newlines should be indented normally
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+
+# === Lint ===
+
+# Not all inheriting classes need to call `super` in their constructor
+Lint/MissingSuper: 
+  Enabled: false
+
+
+# === Metrics ===
+
+# Allow some complexity
+Metrics/AbcSize:
+  Max: 30
+
+# Blocks in specs are long by design
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*_spec.rb
+
+# Allow some longer classes
+Metrics/ClassLength:
+  Max: 200
+
+# Allow some complexity
+Metrics/CyclomaticComplexity:
+  Max: 10
+
+# Allow somewhat longer methods
+Metrics/MethodLength:
+  Max: 25
+
+
+# === Naming ===
+
+# Allow any method parameter name
+Naming/MethodParameterName:
+  Enabled: false
+
+# Allow `has_`, `is_` prefixes
+Naming/PredicateName:
+  Enabled: false
+
+
+# === Security ===
+
+# `YAML.safe_load` is restrictive, we do not use it
+Security/YAMLLoad:
+  Enabled: false
+
+
+# === Style ===
+
+# Allow `module Module::Class`
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+# Good code does not need comments to describe it
+Style/Documentation:
+  Enabled: false
+
+# Allow the use of `ENV['name']`
+Style/FetchEnvVar:
+  Enabled: false
+
+# Allow named or unnamed tokens in strings
+Style/FormatStringToken:
+  Enabled: false
+
+# Frozen string literals are not needed in ruby >= 3
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# Avoid hash rocket syntax where appropriate (EnforcedStyle)
+# Avoid value-less hash shorthand since it is ruby >= 3.1 (EnforcedShorthandSyntax)
+Style/HashSyntax:
+  EnforcedStyle: ruby19_no_mixed_keys 
+  EnforcedShorthandSyntax: never
+
+# Allow non one-line conditions even when the body of the condition is one line
+Style/IfUnlessModifier:
+  Enabled: false
+
+# Allow unfrozen literals
+Style/MutableConstant:
+  Enabled: false
+
+# Allow nested methods to be written without parentheses
+Style/NestedParenthesizedCalls:
+  Enabled: false
+
+# Prefer `%[]` percent literals
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    default: '[]'
+
+# Allow perl-style regex back-references (`$1`)
+Style/PerlBackrefs:
+  Enabled: false
+
+# Prefer `has_key?` and `has_value?` for hashes
+Style/PreferredHashMethods:
+  EnforcedStyle: verbose
+
+# Prefer `rescue` over `rescue StandardError`
+Style/RescueStandardError:
+  EnforcedStyle: implicit
+
+# Prefer multiline arrays to end with a comma for easy alteration
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
