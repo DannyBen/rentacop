@@ -3,6 +3,8 @@
 AllCops:
   NewCops: enable
   TargetRubyVersion: 2.6
+  Exclude:
+    - 'spec/approvals/**/*'
 
 
 # === Layout ===
@@ -10,6 +12,10 @@ AllCops:
 # Prefer outdented `private` and `protected`
 Layout/AccessModifierIndentation:
   EnforcedStyle: outdent
+
+# Align multiline arguments normally
+Layout/ArgumentAlignment:
+  EnforcedStyle: with_fixed_indentation
 
 # Align `when` with `end` in `case`
 Layout/CaseIndentation:
@@ -58,6 +64,10 @@ Metrics/CyclomaticComplexity:
 # Allow somewhat longer methods
 Metrics/MethodLength:
   Max: 25
+
+# Allow some complexity
+Metrics/PerceivedComplexity:
+  Max: 10
 
 
 # === Naming ===
@@ -110,12 +120,22 @@ Style/HashSyntax:
 Style/IfUnlessModifier:
   Enabled: false
 
+# Allow top level `include` in some places
+Style/MixinUsage:
+  Exclude:
+    - 'bin/*'
+    - 'spec/spec_helper.rb'
+
 # Allow unfrozen literals
 Style/MutableConstant:
   Enabled: false
 
 # Allow nested methods to be written without parentheses
 Style/NestedParenthesizedCalls:
+  Enabled: false
+
+# Allow the use of OpenStruct
+Style/OpenStructUse:
   Enabled: false
 
 # Prefer `%[]` percent literals
@@ -135,6 +155,14 @@ Style/PreferredHashMethods:
 Style/RescueStandardError:
   EnforcedStyle: implicit
 
+# Allow perl style global variables like `$?`
+Style/SpecialGlobalVars:
+  Enabled: false
+
 # Prefer multiline arrays to end with a comma for easy alteration
 Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+# Prefer multiline hashes to end with a comma for easy alteration
+Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma

@@ -21,6 +21,6 @@ Gem::Specification.new do |gem|
     'changelog_uri'         => 'https://github.com/DannyBen/rentacop/blob/master/CHANGELOG.md',
     'homepage_uri'          => 'https://github.com/dannyben/rentacop',
     'source_code_uri'       => 'https://github.com/DannyBen/rentacop',
-    'rubygems_mfa_required' => 'true'
+    'rubygems_mfa_required' => 'true',
   }
 end
