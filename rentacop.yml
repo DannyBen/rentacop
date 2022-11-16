@@ -102,6 +102,10 @@ Style/Documentation:
 Style/FetchEnvVar:
   Enabled: false
 
+# Prefer `str % ...` as a string formatting utility
+Style/FormatString:
+  EnforcedStyle: percent
+
 # Allow named or unnamed tokens in strings
 Style/FormatStringToken:
   Enabled: false
