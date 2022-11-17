@@ -41,6 +41,10 @@ Layout/MultilineMethodCallIndentation:
 Lint/MissingSuper: 
   Enabled: false
 
+# `FileUtils` methods do not behave properly on Vagrant
+Lint/NonAtomicFileOperation:
+  Enable: false
+
 
 # === Metrics ===
 
