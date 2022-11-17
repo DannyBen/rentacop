@@ -43,7 +43,7 @@ Lint/MissingSuper:
 
 # `FileUtils` methods do not behave properly on Vagrant
 Lint/NonAtomicFileOperation:
-  Enable: false
+  Enabled: false
 
 
 # === Metrics ===
