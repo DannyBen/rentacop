@@ -104,6 +104,10 @@ Style/ClassAndModuleChildren:
 Style/Documentation:
   Enabled: false
 
+# Do not require comments for `eval`
+Style/DocumentDynamicEvalDefinition:
+  Enabled: false
+
 # Allow the use of `ENV['name']`
 Style/FetchEnvVar:
   Enabled: false
