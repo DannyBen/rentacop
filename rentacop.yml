@@ -13,7 +13,7 @@ AllCops:
 Layout/AccessModifierIndentation:
   EnforcedStyle: outdent
 
-# Align multiline arguments normally
+# Align multi-line arguments normally
 Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
 
@@ -63,7 +63,7 @@ Metrics/CyclomaticComplexity:
   Max: 10
 
 # Allow somewhat longer methods
-# Consider multiline arrays/hashes as one line
+# Consider multi-line arrays/hashes as one line
 Metrics/MethodLength:
   Max: 25
   CountAsOne:
@@ -169,14 +169,19 @@ Style/RescueModifier:
 Style/RescueStandardError:
   EnforcedStyle: implicit
 
+# Avoid forcing safe navigation as it is usually less readable and sometimes
+# just inappropriate
+Style/SafeNavigation:
+  Enabled: false
+
 # Allow perl style global variables like `$?`
 Style/SpecialGlobalVars:
   Enabled: false
 
-# Prefer multiline arrays to end with a comma for easy alteration
+# Prefer multi-line arrays to end with a comma for easy alteration
 Style/TrailingCommaInArrayLiteral:
   EnforcedStyleForMultiline: comma
 
-# Prefer multiline hashes to end with a comma for easy alteration
+# Prefer multi-line hashes to end with a comma for easy alteration
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
