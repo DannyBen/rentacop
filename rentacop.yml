@@ -62,8 +62,13 @@ Metrics/CyclomaticComplexity:
   Max: 10
 
 # Allow somewhat longer methods
+# Consider multiline arrays/hashes as one line
 Metrics/MethodLength:
   Max: 25
+  CountAsOne:
+    - array
+    - hash
+    - heredoc
 
 # Allow some complexity
 Metrics/PerceivedComplexity:
@@ -154,6 +159,10 @@ Style/PerlBackrefs:
 # Prefer `has_key?` and `has_value?` for hashes
 Style/PreferredHashMethods:
   EnforcedStyle: verbose
+
+# Allow one line `rescue` since it is useful in some cases
+Style/RescueModifier:
+  Enabled: false
 
 # Prefer `rescue` over `rescue StandardError`
 Style/RescueStandardError:
