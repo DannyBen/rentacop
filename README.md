@@ -7,7 +7,7 @@ A more relaxed default set of RuboCop rules.
 Run:
 
 ```bash
-$ bundle add rentacop --group development,test
+$ gem install rentacop
 ```
 
 Or, add this line to your Gemfile:
