@@ -1,6 +1,13 @@
 Change Log
 ========================================
 
+v0.1.2 - 2022-11-23
+----------------------------------------
+
+- Style/DocumentDynamicEvalDefinition: Disable
+- Lint/NonAtomicFileOperation: Disable
+
+
 v0.1.1 - 2022-11-17
 ----------------------------------------
 

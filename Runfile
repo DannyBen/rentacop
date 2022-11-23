@@ -1,5 +1,6 @@
 require "runfile-tasks"
 require "byebug"
+require_relative 'lib/rentacop/version'
 
 title   "Rentacop Developer Toolbelt"
 summary "Runfile tasks for building the Rentacop gem"
