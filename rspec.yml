@@ -1,0 +1,44 @@
+# Allow `before :all` and `after :all`
+RSpec/BeforeAfterAll:
+  Enabled: false
+
+# Allow the first `describe` to be arbitrary
+RSpec/DescribeClass:
+  Enabled: false
+
+# Allow longer tests
+RSpec/ExampleLength:
+  Max: 8
+
+# Allow `expect` in `before` hook, it is used as a utility to trap output and
+# ensure state
+RSpec/ExpectInHook:
+  Enabled: false
+
+# Prefer `receive` over `have_received` spies
+RSpec/MessageSpies:
+  EnforcedStyle: receive
+
+# Allow multiple expectations
+RSpec/MultipleExpectations:
+  Max: 5
+
+# Allow more `let` statements per test
+RSpec/MultipleMemoizedHelpers:
+  Max: 8
+
+# Allow unnamed subjects
+RSpec/NamedSubject:
+  Enabled: false
+
+# Allow deeper nested groups
+RSpec/NestedGroups:
+  Max: 5
+
+# Allow stubbing inner methods of `subject`
+RSpec/SubjectStub:
+  Enabled: false
+
+# Allow nameless `double`
+RSpec/VerifiedDoubles:
+  Enabled: false

@@ -1,1 +1,5 @@
-inherit_from: rentacop.yml
+require: rubocop-rspec
+
+inherit_from:
+  - rentacop.yml
+  - rspec.yml
