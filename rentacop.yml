@@ -30,8 +30,12 @@ Layout/HashAlignment:
   EnforcedHashRocketStyle: table
   EnforcedColonStyle: table
 
-# Chained methods in newlines should be indented normally
+# Chained methods in multiple lines should be indented normally
 Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+# Multiline operations in multiple lines should be indented normally
+Layout/MultilineOperationIndentation:
   EnforcedStyle: indented
 
 
@@ -193,3 +197,4 @@ Style/TrailingCommaInArrayLiteral:
 # Prefer multi-line hashes to end with a comma for easy alteration
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
+
