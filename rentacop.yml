@@ -30,11 +30,15 @@ Layout/HashAlignment:
   EnforcedHashRocketStyle: table
   EnforcedColonStyle: table
 
-# Chained methods in multiple lines should be indented normally
+# Disable hanging indents everywhere (strings concatenated with backslash)
+Layout/LineEndStringConcatenationIndentation:
+  EnforcedStyle: indented
+
+# Disable hanging indents everywhere (chained methods)
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
 
-# Multiline operations in multiple lines should be indented normally
+# Disable hanging indents everywhere (multi-line operations)
 Layout/MultilineOperationIndentation:
   EnforcedStyle: indented
 
