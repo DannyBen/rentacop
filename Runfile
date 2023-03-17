@@ -1,11 +1,9 @@
-require "runfile-tasks"
 require "byebug"
-require_relative 'lib/rentacop/version'
+require 'rentacop/version'
 
 title   "Rentacop Developer Toolbelt"
 summary "Runfile tasks for building the Rentacop gem"
 version Rentacop::VERSION
 
-RunfileTasks::RubyGems.all 'rentacop'
-
-require './debug.rb' if File.exist? 'debug.rb'
+import_gem 'runfile-tasks/gem'
+import 'debug'
