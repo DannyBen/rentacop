@@ -82,7 +82,7 @@ inherit_mode:
     - Include
 
 AllCops:
-  TargetRubyVersion: 2.7
+  TargetRubyVersion: 3.0
 ```
 
 ### Running `rubocop`
