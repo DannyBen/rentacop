@@ -194,6 +194,10 @@ Style/SafeNavigation:
 Style/SpecialGlobalVars:
   Enabled: false
 
+# Allow `$stderr.puts` instead of `warn`
+Style/StderrPuts:
+  Enabled: false
+
 # Prefer multi-line arrays to end with a comma for easy alteration
 Style/TrailingCommaInArrayLiteral:
   EnforcedStyleForMultiline: comma
@@ -201,4 +205,3 @@ Style/TrailingCommaInArrayLiteral:
 # Prefer multi-line hashes to end with a comma for easy alteration
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
-
