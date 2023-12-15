@@ -1,7 +1,7 @@
 Change Log
 ========================================
 
-Untagged - Latest
+v0.1.6 - 2023-12-15
 ----------------------------------------
 
 - Disable Style/SuperWithArgsParentheses
