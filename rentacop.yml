@@ -205,3 +205,7 @@ Style/TrailingCommaInArrayLiteral:
 # Prefer multi-line hashes to end with a comma for easy alteration
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
+
+# Allow calling `super` without parentheses
+Style/SuperWithArgsParentheses:
+  Enabled: false
