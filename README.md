@@ -14,7 +14,7 @@ Or, add this line to your Gemfile:
 
 ```ruby
 group :test, :development do
-  gem "rentacop"
+  gem 'rentacop'
 end
 ```
 

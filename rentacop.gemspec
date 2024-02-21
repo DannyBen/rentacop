@@ -12,7 +12,7 @@ Gem::Specification.new do |gem|
   gem.files       = ['LICENSE', 'README.md', 'rentacop.yml', 'rspec.yml', 'lib/rentacop/version.rb']
   gem.homepage    = 'https://github.com/dannyben/rentacop'
   gem.license     = 'MIT'
-  gem.required_ruby_version = '>= 2.6.0'
+  gem.required_ruby_version = '>= 3.0'
 
   # gem.add_dependency "rubocop", "~> 1.39"
 
