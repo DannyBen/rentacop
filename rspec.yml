@@ -42,3 +42,7 @@ RSpec/SubjectStub:
 # Allow nameless `double`
 RSpec/VerifiedDoubles:
   Enabled: false
+
+# Allow multiple calls to `subject`
+RSpec/RepeatedSubjectCall:
+  Enabled: false
