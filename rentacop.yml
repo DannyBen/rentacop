@@ -146,6 +146,10 @@ Style/HashSyntax:
 Style/IfUnlessModifier:
   Enabled: false
 
+# Allow long numbers without undescores
+Style/NumericLiterals:
+  Enabled: false
+
 # Allow top level `include` in some places
 Style/MixinUsage:
   Exclude:
