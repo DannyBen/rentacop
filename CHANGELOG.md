@@ -1,5 +1,12 @@
-Change Log
+Changelog
 ========================================
+
+v0.1.8 - 2025-06-20
+----------------------------------------
+
+- Disable Style/NumericLiterals
+- Update PredicateMethod and PredicatePrefix
+
 
 v0.1.7 - 2024-03-01
 ----------------------------------------
