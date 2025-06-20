@@ -95,7 +95,11 @@ Naming/MethodParameterName:
   Enabled: false
 
 # Allow `has_`, `is_` prefixes
-Naming/PredicateName:
+Naming/PredicatePrefix:
+  Enabled: false
+
+# Allow boolean methods to not end with ?
+Naming/PredicateMethod:
   Enabled: false
 
 
