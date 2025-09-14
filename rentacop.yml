@@ -2,7 +2,7 @@
 
 AllCops:
   NewCops: enable
-  TargetRubyVersion: 3.0
+  TargetRubyVersion: 3.2
   Exclude:
     - 'spec/approvals/**/*'
 
@@ -141,10 +141,8 @@ Style/FrozenStringLiteralComment:
   Enabled: false
 
 # Avoid hash rocket syntax where appropriate (EnforcedStyle)
-# Avoid value-less hash shorthand since it is ruby >= 3.1 (EnforcedShorthandSyntax)
 Style/HashSyntax:
   EnforcedStyle: ruby19_no_mixed_keys 
-  EnforcedShorthandSyntax: never
 
 # Allow non one-line conditions even when the body of the condition is one line
 Style/IfUnlessModifier:
