@@ -45,6 +45,10 @@ Layout/MultilineOperationIndentation:
 
 # === Lint ===
 
+# Allow `it` instead of `it()` inside a block
+Lint/ItWithoutArgumentsInBlock:
+  Enabled: false
+
 # Not all inheriting classes need to call `super` in their constructor
 Lint/MissingSuper: 
   Enabled: false
@@ -52,6 +56,8 @@ Lint/MissingSuper:
 # `FileUtils` methods do not behave properly on Vagrant
 Lint/NonAtomicFileOperation:
   Enabled: false
+
+
 
 
 # === Metrics ===
