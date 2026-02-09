@@ -1,5 +1,7 @@
 # Rentacop
 
+![repocard](https://repocard.dannyben.com/svg/rentacop.svg)
+
 A more relaxed default set of RuboCop rules.
 
 ## Install
